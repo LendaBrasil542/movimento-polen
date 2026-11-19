@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movimento Pólen — Um estilo de vida (Desde 1971)</title>
+  <meta name="description" content="Fundado em 1971 na Catedral Metropolitana de Florianópolis pelo Pe. Pedro Adolino Martendal. Assim como uma flor espalha suas sementes pelo mundo, o Movimento Pólen busca formar e espalhar lideranças cristãs." />
+
+  <!-- Google Fonts: Lora (Títulos) & Plus Jakarta Sans (Corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            creme: {
+              DEFAULT: '#FAF8F5',
+              escuro: '#F2ECE1',
+              card: '#FFFFFF'
+            },
+            grafite: {
+              DEFAULT: '#1E293B',
+              suave: '#475569'
+            },
+            dourado: {
+              DEFAULT: '#D97706',
+              claro: '#FEF3C7',
+              hover: '#B45309'
+            },
+            terracota: {
+              DEFAULT: '#9A3412',
+              claro: '#FFEDD5',
+              hover: '#7C2D12'
+            }
+          },
+          fontFamily: {
+            serif: ['Lora', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS Customizado -->
+  <link rel="stylesheet" href="./assets/css/custom.css" />
+</head>
+<body class="bg-creme text-grafite font-sans antialiased selection:bg-dourado/20 selection:text-terracota">
+
+  <!-- NAVEGAÇÃO FIXA -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-creme/95 backdrop-blur-md border-b border-amber-900/10 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Marca / Logo -->
+        <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-dourado to-terracota flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform overflow-hidden">
+            <img src="./assets/img/logo.svg" alt="Logo Movimento Pólen" class="w-7 h-7 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <span class="hidden items-center justify-center font-serif font-bold text-lg">P</span>
+          </div>
+          <div>
+            <span class="block font-serif font-bold text-xl text-grafite tracking-tight leading-none">Movimento Pólen</span>
+            <span class="block text-xs text-terracota font-medium mt-1">Um estilo de vida • Desde 1971</span>
+          </div>
+        </a>
+
+        <!-- Navegação Desktop -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-grafite-suave">
+          <a href="#inicio" class="hover:text-dourado transition-colors">Início</a>
+          <a href="#historia" class="hover:text-dourado transition-colors">Nossa História</a>
+          <a href="#quem-somos" class="hover:text-dourado transition-colors">O Pólen &amp; Mística</a>
+          <a href="#caminhada" class="hover:text-dourado transition-colors">Nossa Caminhada</a>
+          <a href="#equipes" class="hover:text-dourado transition-colors">Comunidades &amp; Equipes</a>
+          <a href="#missas" class="hover:text-dourado transition-colors">Missas</a>
+          <a href="#acervo" class="hover:text-dourado transition-colors">Síntese Pólen</a>
+          <a href="#formulario-participacao" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-dourado text-white font-semibold hover:bg-dourado-hover transition-all shadow-sm hover:shadow">
+            <span>Quero Participar</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </nav>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir Menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-xl text-grafite hover:bg-creme-escuro focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-creme border-b border-amber-900/10 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+      <a href="#inicio" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">Início</a>
+      <a href="#historia" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">Nossa História</a>
+      <a href="#quem-somos" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">O Pólen &amp; Mística</a>
+      <a href="#caminhada" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">Nossa Caminhada</a>
+      <a href="#equipes" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">Comunidades &amp; Equipes</a>
+      <a href="#missas" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">Missas</a>
+      <a href="#acervo" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-grafite hover:bg-creme-escuro">Síntese Pólen (Documentos)</a>
+      <div class="pt-2">
+        <a href="#formulario-participacao" class="mobile-nav-link flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-dourado text-white font-semibold hover:bg-dourado-hover transition-colors">
+          <span>Quero Participar</span>
+          <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- 1. PÁGINA INICIAL (HERO SECTION) -->
+    <section id="inicio" class="relative overflow-hidden py-16 sm:py-24 lg:py-28 border-b border-amber-900/10">
+      <div class="absolute inset-0 pointer-events-none opacity-45 bg-[radial-gradient(circle_at_top_right,#FEF3C7,transparent_55%),radial-gradient(circle_at_bottom_left,#FFEDD5,transparent_50%)]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dourado-claro border border-dourado/30 text-terracota text-xs sm:text-sm font-semibold mb-6">
+            <i data-lucide="church" class="w-4 h-4 text-dourado"></i>
+            <span>Fundado em 1971 | Catedral Metropolitana de Florianópolis</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-6xl font-bold text-grafite leading-tight tracking-tight">
+            Um <span class="text-dourado italic">estilo</span> de <span class="text-terracota">vida</span>.
+          </h1>
+
+          <p class="mt-6 text-lg sm:text-xl text-grafite-suave leading-relaxed">
+            Assim como uma flor espalha suas sementes pelo mundo, o Movimento Pólen busca formar e espalhar lideranças cristãs, que vivam e testemunhem o Evangelho no seu dia a dia.
+          </p>
+
+          <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#caminhada" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-dourado text-white font-semibold hover:bg-dourado-hover transition-all shadow-md hover:shadow-lg">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+              <span>Conheça nossa caminhada</span>
+            </a>
+            <a href="#acervo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-grafite font-semibold border border-amber-900/15 hover:border-dourado hover:text-dourado transition-all shadow-sm">
+              <i data-lucide="newspaper" class="w-5 h-5 text-terracota"></i>
+              <span>Documentos</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Destaques Rápidos (Renderizados via statsRenderer.js) -->
+        <div id="stats-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          <!-- Preenchido via js/components/statsRenderer.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. NOSSA HISTÓRIA (COM GALERIA DE FOTOS) -->
+    <section id="historia" class="py-20 sm:py-24 border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-dourado-claro text-terracota font-bold text-xs uppercase tracking-wider">
+              <i data-lucide="history" class="w-4 h-4 text-dourado"></i>
+              <span>Nossa História</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite leading-snug">
+              Desde 1971, há mais de 50 anos!
+            </h2>
+
+            <p class="text-grafite-suave text-base sm:text-lg leading-relaxed">
+              O Movimento Pólen foi fundado em <strong>1971</strong>, na <strong>Catedral Metropolitana de Florianópolis</strong>, pelo <strong>Padre Pedro Adolino Martendal</strong>, junto a seus alunos, que desejavam realizar um retiro para aprofundar sua fé.
+            </p>
+
+            <p class="text-grafite-suave text-base sm:text-lg leading-relaxed">
+              Dessa iniciativa nasceu o <strong>Retiro Básico</strong> e, posteriormente, todo o <strong>Movimento Pólen</strong>.
+            </p>
+          </div>
+
+          <!-- As cinco etapas da caminhada (Resumo Visual) -->
+          <div class="lg:col-span-6">
+            <div class="bg-white rounded-3xl p-7 sm:p-9 border border-amber-900/10 shadow-sm">
+              <span class="text-xs font-bold uppercase tracking-wider text-terracota">Crescimento Contínuo</span>
+              <h3 class="font-serif text-2xl font-bold text-grafite mt-1 mb-5">
+                As cinco etapas da caminhada
+              </h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <a href="#caminhada" class="flex items-center gap-3 p-3.5 rounded-2xl bg-creme hover:bg-dourado-claro/60 border border-amber-900/10 transition-colors">
+                  <span class="w-8 h-8 rounded-xl bg-dourado text-white font-bold text-sm flex items-center justify-center shrink-0">1</span>
+                  <span class="font-serif font-bold text-grafite">Retiro Básico</span>
+                </a>
+                <a href="#caminhada" class="flex items-center gap-3 p-3.5 rounded-2xl bg-creme hover:bg-dourado-claro/60 border border-amber-900/10 transition-colors">
+                  <span class="w-8 h-8 rounded-xl bg-dourado text-white font-bold text-sm flex items-center justify-center shrink-0">2</span>
+                  <span class="font-serif font-bold text-grafite">Aprofundamento</span>
+                </a>
+                <a href="#caminhada" class="flex items-center gap-3 p-3.5 rounded-2xl bg-creme hover:bg-dourado-claro/60 border border-amber-900/10 transition-colors">
+                  <span class="w-8 h-8 rounded-xl bg-dourado text-white font-bold text-sm flex items-center justify-center shrink-0">3</span>
+                  <span class="font-serif font-bold text-grafite">Opção</span>
+                </a>
+                <a href="#caminhada" class="flex items-center gap-3 p-3.5 rounded-2xl bg-creme hover:bg-dourado-claro/60 border border-amber-900/10 transition-colors">
+                  <span class="w-8 h-8 rounded-xl bg-dourado text-white font-bold text-sm flex items-center justify-center shrink-0">4</span>
+                  <span class="font-serif font-bold text-grafite">Renovação</span>
+                </a>
+                <a href="#caminhada" class="sm:col-span-2 flex items-center gap-3 p-3.5 rounded-2xl bg-terracota-claro/60 hover:bg-terracota-claro border border-terracota/20 transition-colors">
+                  <span class="w-8 h-8 rounded-xl bg-terracota text-white font-bold text-sm flex items-center justify-center shrink-0">5</span>
+                  <span class="font-serif font-bold text-grafite">Casais</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galeria de Fotografias Históricas e Atuais -->
+        <div class="mt-16 pt-12 border-t border-amber-900/10">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-terracota">Memória e Vida</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-grafite mt-1">
+                Fotografias históricas e atuais do Movimento Pólen
+              </h3>
+            </div>
+            <p class="text-sm text-grafite-suave">
+              Registros de gerações que construíram e vivem o Movimento Pólen.
+            </p>
+          </div>
+
+          <div id="timeline-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Preenchido via js/components/timelineRenderer.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MISSAS & 4. COMUNIDADES -->
+    <section id="missas" class="py-20 sm:py-24 bg-creme-escuro/50 border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Bloco 3: Missas -->
+        <div class="rounded-3xl bg-gradient-to-br from-terracota via-amber-800 to-dourado p-8 sm:p-10 lg:p-12 text-white shadow-xl relative overflow-hidden">
+          <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+            <i data-lucide="church" class="w-72 h-72"></i>
+          </div>
+
+          <div class="relative z-10">
+            <div class="max-w-3xl">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 backdrop-blur-sm text-amber-100 text-xs font-bold uppercase tracking-wider mb-4">
+                <i data-lucide="bell-ring" class="w-4 h-4"></i>
+                <span>Celebrações Abertas a Todos</span>
+              </div>
+
+              <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+                Missas do Movimento Pólen
+              </h2>
+
+              <p class="text-amber-50/95 text-base sm:text-lg mt-3 leading-relaxed">
+                O Movimento Pólen também promove momentos de celebração e espiritualidade abertos a todos.
+              </p>
+            </div>
+
+            <!-- Os 3 Horários de Missas -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+              <!-- Missa Mensal -->
+              <div class="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="px-3 py-1 rounded-full bg-amber-400/20 text-amber-200 text-xs font-bold">Catedral Metropolitana</span>
+                    <i data-lucide="sun" class="w-5 h-5 text-amber-300"></i>
+                  </div>
+                  <h3 class="font-serif font-bold text-xl text-white">Missa mensal</h3>
+                  <p class="text-amber-100 text-sm mt-2">
+                    Primeiro sábado do mês, às <strong>8h15</strong>.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/10 text-xs text-amber-200/90 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span>Catedral Metropolitana de Florianópolis</span>
+                </div>
+              </div>
+
+              <!-- Missa Jovem -->
+              <div class="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="px-3 py-1 rounded-full bg-amber-400/20 text-amber-200 text-xs font-bold">Catedral Metropolitana</span>
+                    <i data-lucide="sparkles" class="w-5 h-5 text-amber-300"></i>
+                  </div>
+                  <h3 class="font-serif font-bold text-xl text-white">Missa Jovem</h3>
+                  <p class="text-amber-100 text-sm mt-2">
+                    Terceiro sábado do mês, às <strong>18h15</strong>.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/10 text-xs text-amber-200/90 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span>Catedral Metropolitana de Florianópolis</span>
+                </div>
+              </div>
+
+              <!-- Missa na Igreja de Santo Antônio -->
+              <div class="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="px-3 py-1 rounded-full bg-amber-400/20 text-amber-200 text-xs font-bold">Igreja de Santo Antônio</span>
+                    <i data-lucide="heart" class="w-5 h-5 text-amber-300"></i>
+                  </div>
+                  <h3 class="font-serif font-bold text-xl text-white">Missa na Igreja de Santo Antônio</h3>
+                  <p class="text-amber-100 text-sm mt-2">
+                    Primeiro domingo do mês, às <strong>10h</strong>.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/10 text-xs text-amber-200/90 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span>Igreja de Santo Antônio — Florianópolis</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <p class="text-sm sm:text-base text-amber-50 font-medium">
+                Todos são convidados a participar! Polens e não Polens, jovens, casais, comunidades e pessoas que desejam conhecer o Movimento Pólen. Venha celebrar conosco!
+              </p>
+              <a href="#formulario-participacao" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white text-terracota font-bold text-sm hover:bg-amber-50 transition-all shrink-0 shadow">
+                <span>Quero Participar</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloco 4: Comunidades -->
+        <div class="mt-12 bg-white rounded-3xl p-7 sm:p-9 border border-amber-900/10 shadow-sm">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-8 space-y-2">
+              <div class="inline-flex items-center gap-2 text-terracota font-bold text-xs uppercase tracking-wider">
+                <i data-lucide="users" class="w-4 h-4 text-dourado"></i>
+                <span>Vivência Fraterna</span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-grafite">
+                Comunidades
+              </h3>
+              <p class="text-grafite-suave text-base leading-relaxed">
+                As comunidades são pequenos grupos de convivência formados por jovens e acompanhados por um <strong>casal espiritual</strong>. Após os retiros, os participantes são convidados a continuar sua caminhada em comunidade, por meio de encontros mensais, partilha de vida, oração e aprofundamento da fé.
+              </p>
+            </div>
+            <div class="lg:col-span-4 flex lg:justify-end">
+              <a href="#equipes" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-creme-escuro text-terracota font-semibold text-sm hover:bg-dourado hover:text-white transition-all">
+                <span>Ver Comunidades e Equipes</span>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. O QUE É O MOVIMENTO PÓLEN? & 6. NOSSA ESPIRITUALIDADE: A MÍSTICA -->
+    <section id="quem-somos" class="py-20 sm:py-24 border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+
+          <!-- 5. O que é o Movimento Pólen? -->
+          <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+            <div class="space-y-5">
+              <div class="inline-flex items-center gap-2 text-terracota font-semibold text-sm uppercase tracking-wider">
+                <i data-lucide="sprout" class="w-4 h-4 text-dourado"></i>
+                <span>Identidade e Chamado</span>
+              </div>
+
+              <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite leading-snug">
+                O que é o Movimento Pólen?
+              </h2>
+
+              <p class="text-grafite-suave text-base sm:text-lg leading-relaxed">
+                O <strong>Movimento Pólen</strong> é um movimento católico de evangelização, nascido em <strong>1971</strong>, na <strong>Catedral Metropolitana de Florianópolis</strong>.
+              </p>
+
+              <p class="text-grafite-suave text-base sm:text-lg leading-relaxed">
+                Mais do que promover retiros isolados, o Movimento Pólen propõe um <strong>estilo de vida</strong> e uma caminhada contínua de fé.
+              </p>
+
+              <p class="text-grafite-suave text-base sm:text-lg leading-relaxed">
+                Após a sementinha plantada no <strong>Retiro Básico</strong>, os participantes são convidados a integrar pequenas comunidades, acompanhadas por um <strong>casal espiritual</strong>.
+              </p>
+
+              <p class="text-grafite-suave text-base sm:text-lg leading-relaxed">
+                Nelas, os jovens se encontram regularmente para partilhar a vida, meditar a <strong>Palavra de Vida</strong> — um trecho bíblico escolhido pelo Diretor Espiritual —, aprofundar sua formação cristã e servir à Igreja por meio das equipes.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-5 rounded-2xl bg-white border border-amber-900/10 shadow-xs">
+                <div class="w-10 h-10 rounded-xl bg-dourado-claro text-dourado flex items-center justify-center mb-3">
+                  <i data-lucide="book-open-check" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-grafite">Palavra de Vida</h3>
+                <p class="text-sm text-grafite-suave mt-1">
+                  Trecho bíblico escolhido pelo Diretor Espiritual para iluminar a meditação e a partilha mensal das comunidades.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-white border border-amber-900/10 shadow-xs">
+                <div class="w-10 h-10 rounded-xl bg-terracota-claro text-terracota flex items-center justify-center mb-3">
+                  <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-grafite">Casal Espiritual</h3>
+                <p class="text-sm text-grafite-suave mt-1">
+                  Presença amiga e madura na fé que acompanha de perto os jovens na vivência comunitária.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Nossa espiritualidade: a Mística -->
+          <div class="lg:col-span-5">
+            <div class="h-full rounded-3xl bg-gradient-to-b from-amber-50/90 to-orange-50/70 border border-dourado/30 p-7 sm:p-9 shadow-md flex flex-col justify-between">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-terracota text-white text-xs font-semibold uppercase tracking-wider mb-5">
+                  <i data-lucide="book-heart" class="w-3.5 h-3.5"></i>
+                  <span>Os 7 Pontos da Mística</span>
+                </div>
+
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-grafite">
+                  Nossa espiritualidade: <span class="italic text-terracota">a Mística</span>
+                </h3>
+
+                <p class="mt-4 text-grafite-suave text-sm sm:text-base leading-relaxed">
+                  A espiritualidade do Movimento Pólen é fundamentada no livro <strong>Mística</strong>, escrito pelo nosso Diretor Espiritual, <strong>Padre Pedro Adolino Martendal</strong>.
+                </p>
+
+                <p class="mt-4 text-grafite-suave text-sm sm:text-base leading-relaxed">
+                  A Mística apresenta <strong>sete pontos</strong> que buscamos viver no cotidiano para nos aproximarmos cada vez mais de Cristo.
+                </p>
+
+                <p class="mt-4 text-grafite-suave text-sm sm:text-base leading-relaxed">
+                  São princípios que nos ensinam a viver o Evangelho nas diferentes realidades da vida: <strong>na família, na faculdade, no trabalho e na comunidade</strong>.
+                </p>
+
+                <p class="mt-4 text-grafite-suave text-sm sm:text-base leading-relaxed">
+                  É por meio dessa vivência que buscamos formar lideranças cristãs comprometidas com a Igreja e com o mundo.
+                </p>
+              </div>
+
+              <div class="mt-6 pt-5 border-t border-amber-900/15 flex items-center gap-3 text-xs sm:text-sm text-terracota font-semibold">
+                <i data-lucide="sparkles" class="w-5 h-5 text-dourado shrink-0"></i>
+                <span>Formando lideranças cristãs para a Igreja e para o mundo.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. NOSSA CAMINHADA (OS 5 RETIROS) -->
+    <section id="caminhada" class="py-20 sm:py-24 bg-creme-escuro/50 border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 text-terracota font-semibold text-sm uppercase tracking-wider">
+            <i data-lucide="footprints" class="w-4 h-4 text-dourado"></i>
+            <span>Etapas de Fé</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite mt-2">
+            Nossa caminhada
+          </h2>
+          <p class="mt-4 text-grafite-suave text-base sm:text-lg leading-relaxed">
+            O Movimento Pólen é formado por retiros e por uma vivência contínua em comunidade. A caminhada começa no <strong>Retiro Básico</strong>. Depois, os participantes permanecem em comunidade por aproximadamente um ano e são convidados a seguir para a próxima etapa.
+          </p>
+        </div>
+
+        <!-- Os 5 Cards dos Retiros -->
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <!-- 1. Retiro Básico -->
+          <article class="bg-white rounded-3xl p-6 border border-amber-900/10 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-dourado-claro text-terracota font-bold text-xs">1. Primeira Etapa</span>
+                <i data-lucide="sunrise" class="w-5 h-5 text-dourado"></i>
+              </div>
+              <h3 class="font-serif font-bold text-xl text-grafite">Retiro Básico</h3>
+              <p class="text-sm text-grafite-suave mt-3 leading-relaxed">
+                É a porta de entrada do Movimento Pólen. Apresenta os princípios fundamentais da fé cristã, abordando temas como Jesus Cristo, Nossa Senhora e o convite a viver como cristãos.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-dourado">
+              Porta de entrada do Movimento Pólen
+            </div>
+          </article>
+
+          <!-- 2. Aprofundamento -->
+          <article class="bg-white rounded-3xl p-6 border border-amber-900/10 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-dourado-claro text-terracota font-bold text-xs">2. Segunda Etapa</span>
+                <i data-lucide="book-open" class="w-5 h-5 text-dourado"></i>
+              </div>
+              <h3 class="font-serif font-bold text-xl text-grafite">Aprofundamento</h3>
+              <p class="text-sm text-grafite-suave mt-3 leading-relaxed">
+                É o momento de aprofundar a fé e conhecer a Mística do Movimento Pólen, compreendendo melhor nosso estilo de vida e como colocar seus ensinamentos em prática.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-dourado">
+              Vivência prática da Mística
+            </div>
+          </article>
+
+          <!-- 3. Opção -->
+          <article class="bg-white rounded-3xl p-6 border border-amber-900/10 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-dourado-claro text-terracota font-bold text-xs">3. Terceira Etapa</span>
+                <i data-lucide="milestone" class="w-5 h-5 text-dourado"></i>
+              </div>
+              <h3 class="font-serif font-bold text-xl text-grafite">Opção</h3>
+              <p class="text-sm text-grafite-suave mt-3 leading-relaxed">
+                Um retiro dedicado ao aprofundamento sobre Jesus Cristo e a Igreja, abordando a Bíblia e a organização da Igreja Católica. É também nessa etapa que o participante assume seu compromisso com a Opção Pólen.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-dourado">
+              Compromisso com a Opção Pólen
+            </div>
+          </article>
+
+          <!-- 4. Renovação -->
+          <article class="bg-white rounded-3xl p-6 border border-amber-900/10 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-dourado-claro text-terracota font-bold text-xs">4. Quarta Etapa</span>
+                <i data-lucide="refresh-cw" class="w-5 h-5 text-dourado"></i>
+              </div>
+              <h3 class="font-serif font-bold text-xl text-grafite">Renovação</h3>
+              <p class="text-sm text-grafite-suave mt-3 leading-relaxed">
+                Um retiro destinado aos jovens que já percorrem a caminhada e desejam renovar sua fé. A cada ano, apresenta uma temática diferente.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-dourado">
+              Temática renovada a cada ano
+            </div>
+          </article>
+
+          <!-- 5. Casais -->
+          <article class="bg-white rounded-3xl p-6 border border-amber-900/10 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 rounded-full bg-terracota-claro text-terracota font-bold text-xs">5. Matrimônio</span>
+                <i data-lucide="heart" class="w-5 h-5 text-terracota"></i>
+              </div>
+              <h3 class="font-serif font-bold text-xl text-grafite">Casais</h3>
+              <p class="text-sm text-grafite-suave mt-3 leading-relaxed">
+                Etapa dedicada às pessoas que vivem o sacramento do matrimônio. Acolhe tanto casais que fizeram parte do Movimento Pólen anteriormente quanto novos casais que se sentem chamados a participar.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-terracota">
+              Sacramento do matrimônio
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. COMUNIDADES E EQUIPES -->
+    <section id="equipes" class="py-20 sm:py-24 border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-3xl mx-auto text-center mb-14">
+          <div class="inline-flex items-center gap-2 text-terracota font-semibold text-sm uppercase tracking-wider">
+            <i data-lucide="hand-heart" class="w-4 h-4 text-dourado"></i>
+            <span>Comunhão e Serviço</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite mt-2">
+            Comunidades e equipes
+          </h2>
+        </div>
+
+        <!-- Bloco Comunidades -->
+        <div class="bg-white rounded-3xl p-7 sm:p-10 border border-amber-900/10 shadow-sm mb-12">
+          <div class="flex flex-col md:flex-row md:items-center gap-6">
+            <div class="w-14 h-14 rounded-2xl bg-dourado-claro text-dourado flex items-center justify-center shrink-0">
+              <i data-lucide="users" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-grafite">Comunidades</h3>
+              <p class="text-grafite-suave text-base mt-2 leading-relaxed">
+                Após os retiros, os participantes permanecem unidos em comunidades, pequenos grupos de convivência que se encontram mensalmente. Nas etapas de jovens, cada comunidade é acompanhada por um <strong>casal espiritual</strong>. Na etapa de casais, a organização acontece de acordo com a realidade dessa caminhada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloco Equipes Permanentes -->
+        <div class="mb-14">
+          <div class="mb-7">
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-grafite">Equipes</h3>
+            <p class="text-grafite-suave text-base mt-1">
+              O Movimento Pólen funciona por meio de equipes com responsabilidades específicas, que ajudam a preparar e manter as atividades do Movimento Pólen.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+            <!-- Acolhida -->
+            <div class="bg-white rounded-2xl p-6 border border-amber-900/10 shadow-xs">
+              <div class="w-11 h-11 rounded-xl bg-dourado-claro text-dourado flex items-center justify-center mb-4">
+                <i data-lucide="smile-plus" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-lg text-grafite">Acolhida</h4>
+              <p class="text-sm text-grafite-suave mt-2 leading-relaxed">
+                Responsável por convidar e chamar os jovens para o Retiro Básico, além de acolher todos que chegam ao Movimento Pólen.
+              </p>
+            </div>
+
+            <!-- Canto -->
+            <div class="bg-white rounded-2xl p-6 border border-amber-900/10 shadow-xs">
+              <div class="w-11 h-11 rounded-xl bg-dourado-claro text-dourado flex items-center justify-center mb-4">
+                <i data-lucide="music" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-lg text-grafite">Canto</h4>
+              <p class="text-sm text-grafite-suave mt-2 leading-relaxed">
+                Responsável pela animação musical dos retiros, ensaios, celebrações e missas.
+              </p>
+            </div>
+
+            <!-- Comunicação -->
+            <div class="bg-white rounded-2xl p-6 border border-amber-900/10 shadow-xs">
+              <div class="w-11 h-11 rounded-xl bg-dourado-claro text-dourado flex items-center justify-center mb-4">
+                <i data-lucide="megaphone" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-lg text-grafite">Comunicação</h4>
+              <p class="text-sm text-grafite-suave mt-2 leading-relaxed">
+                Cuida das redes sociais, divulgação de avisos e eventos, além da produção do jornal do Movimento Pólen, a <strong>Síntese Pólen</strong>.
+              </p>
+            </div>
+
+            <!-- Formação -->
+            <div class="bg-white rounded-2xl p-6 border border-amber-900/10 shadow-xs">
+              <div class="w-11 h-11 rounded-xl bg-dourado-claro text-dourado flex items-center justify-center mb-4">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-lg text-grafite">Formação</h4>
+              <p class="text-sm text-grafite-suave mt-2 leading-relaxed">
+                Organiza palestras, encontros e momentos formativos para o crescimento cristão de toda a comunidade.
+              </p>
+            </div>
+
+            <!-- Liturgia -->
+            <div class="bg-white rounded-2xl p-6 border border-amber-900/10 shadow-xs">
+              <div class="w-11 h-11 rounded-xl bg-dourado-claro text-dourado flex items-center justify-center mb-4">
+                <i data-lucide="flame" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-lg text-grafite">Liturgia</h4>
+              <p class="text-sm text-grafite-suave mt-2 leading-relaxed">
+                Responsável pela preparação das missas, adorações ao Santíssimo Sacramento, terços e demais momentos litúrgicos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloco Equipes de Serviço nos Retiros -->
+        <div class="rounded-3xl bg-gradient-to-br from-grafite to-slate-800 text-white p-7 sm:p-10 shadow-md">
+          <div class="max-w-2xl mb-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-dourado">Dedicação nos Encontros</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-1">
+              Equipes de serviço nos retiros
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Dirigentes -->
+            <div class="p-6 rounded-2xl bg-white/10 border border-white/10">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-dourado/20 text-dourado flex items-center justify-center">
+                  <i data-lucide="compass" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-serif font-bold text-xl text-dourado-claro">Dirigentes</h4>
+              </div>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+                Responsáveis pela organização e condução do retiro, cuidando de toda a programação e acompanhando os retirantes. Inclui funções como palestrantes, secretários e demais responsáveis pela realização do retiro.
+              </p>
+            </div>
+
+            <!-- Oração e Serviço -->
+            <div class="p-6 rounded-2xl bg-white/10 border border-white/10">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-dourado/20 text-dourado flex items-center justify-center">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-serif font-bold text-xl text-dourado-claro">Oração e Serviço</h4>
+              </div>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+                Responsável por sustentar o retiro por meio da oração, intercedendo pela equipe de preparação e pelos retirantes, além de cuidar das refeições, da limpeza e da organização dos espaços.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. ACERVO HISTÓRICO (JORNAL SÍNTESE PÓLEN EM 3 PASTAS) -->
+    <section id="acervo" class="py-20 sm:py-24 bg-creme-escuro/50 border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 text-terracota font-semibold text-sm uppercase tracking-wider">
+              <i data-lucide="newspaper" class="w-4 h-4 text-dourado"></i>
+              <span>Jornal do Movimento Pólen</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite mt-2">
+              Acervo Histórico — Síntese Pólen
+            </h2>
+            <p class="text-grafite-suave mt-3 text-base">
+              Acesse e leia as edições do jornal <strong>Síntese Pólen</strong> organizadas em três pastas: <strong>Sínteses antigas</strong>, <strong>Sínteses 2026</strong> e <strong>Sínteses 2027</strong>.
+            </p>
+          </div>
+
+          <div class="text-sm font-medium text-grafite-suave bg-white px-4 py-2.5 rounded-xl border border-amber-900/10 self-start lg:self-end">
+            Exibindo <span id="archive-count" class="font-bold text-terracota">0</span> edição(ões)
+          </div>
+        </div>
+
+        <!-- Barra de Busca e Pastas da Síntese Pólen -->
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-amber-900/10 shadow-sm mb-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+            <!-- Campo de Busca -->
+            <div class="lg:col-span-5 relative">
+              <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Buscar edição da Síntese Pólen por título, mês ou ano..."
+                aria-label="Buscar edições da Síntese Pólen"
+                class="w-full pl-11 pr-4 py-3 rounded-xl bg-creme border border-amber-900/15 text-grafite placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-dourado focus:border-transparent transition-all"
+              />
+            </div>
+
+            <!-- Botões das 3 Pastas -->
+            <div id="category-filters" class="lg:col-span-7 flex flex-wrap items-center gap-2" role="group" aria-label="Filtrar Síntese Pólen por pasta">
+              <button type="button" data-category="Todos" class="filter-btn active inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-dourado text-white shadow-sm">
+                <i data-lucide="layers" class="w-4 h-4"></i>
+                <span>Todas as Pastas</span>
+              </button>
+              <button type="button" data-category="Sínteses antigas" class="filter-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-creme text-grafite-suave hover:bg-creme-escuro">
+                <i data-lucide="folder-clock" class="w-4 h-4 text-terracota"></i>
+                <span>Sínteses antigas</span>
+              </button>
+              <button type="button" data-category="Sínteses 2026" class="filter-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-creme text-grafite-suave hover:bg-creme-escuro">
+                <i data-lucide="folder" class="w-4 h-4 text-dourado"></i>
+                <span>Sínteses 2026</span>
+              </button>
+              <button type="button" data-category="Sínteses 2027" class="filter-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-creme text-grafite-suave hover:bg-creme-escuro">
+                <i data-lucide="folder-plus" class="w-4 h-4 text-dourado"></i>
+                <span>Sínteses 2027</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid Dinâmico das Edições da Síntese Pólen -->
+        <div id="archive-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Preenchido via js/components/archiveRenderer.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. PERGUNTAS FREQUENTES & QUERO PARTICIPAR! -->
+    <section id="participar" class="py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- FAQ: PERGUNTAS FREQUENTES -->
+        <div id="faq-section" class="max-w-4xl mx-auto mb-20">
+          <div class="text-center mb-12">
+            <span class="text-xs font-semibold uppercase tracking-widest text-terracota">Dúvidas Comuns</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite mt-2">
+              Perguntas Frequentes
+            </h2>
+            <p class="text-grafite-suave mt-3 text-base">
+              Conheça melhor o Movimento Pólen, como funciona nossa caminhada e como você pode participar.
+            </p>
+          </div>
+
+          <div id="faq-container" class="space-y-4">
+            <!-- Preenchido dinamicamente via js/main.js a partir de data/data.json -->
+          </div>
+        </div>
+
+        <!-- ÁREA DE PARTICIPAÇÃO (DESTINO DIRETO DO BOTÃO QUERO PARTICIPAR) -->
+        <div id="formulario-participacao" class="scroll-mt-28 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-10 border-t border-amber-900/10">
+
+          <!-- Coluna Esquerda: Convite e Recadinho do Retiro Básico -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-2 text-terracota font-semibold text-sm uppercase tracking-wider">
+              <i data-lucide="heart-handshake" class="w-4 h-4 text-dourado"></i>
+              <span>Venha Caminhar Conosco</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-grafite leading-tight">
+              Quero participar!
+            </h2>
+
+            <p class="text-grafite-suave text-base leading-relaxed">
+              Escolha ao lado como podemos ajudar você a dar o próximo passo: seja para conhecer de perto o Movimento Pólen ou para participar de um retiro.
+            </p>
+
+            <!-- Recadinho de convite do Retiro Básico -->
+            <div class="rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 border border-dourado/35 p-7 shadow-sm">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dourado text-white text-xs font-bold uppercase tracking-wider mb-4">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Convite Especial • Retiro Básico</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-grafite">
+                Uma sementinha espera por você!
+              </h3>
+              <p class="text-sm sm:text-base text-grafite-suave mt-2.5 leading-relaxed">
+                O <strong>Retiro Básico</strong> é a porta de entrada para viver o estilo de vida do Movimento Pólen, descobrir novas amizades em Cristo e iniciar sua caminhada em comunidade. Deixe seu contato ao lado para que a Equipe de Acolhida avise você sobre as próximas datas e inscrições!
+              </p>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Formulário conectado ao Google Sheets -->
+          <div class="lg:col-span-7">
+            <form id="contact-form" class="bg-white rounded-3xl p-7 sm:p-10 border border-amber-900/10 shadow-md space-y-5" novalidate>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-grafite mb-3">
+                  Como você deseja participar? *
+                </span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                  <button
+                    type="button"
+                    data-intent="Quero conhecer o Movimento Pólen."
+                    class="intent-btn active text-left p-4 rounded-2xl border-2 border-dourado bg-dourado-claro/40 transition-all flex items-start gap-3"
+                  >
+                    <i data-lucide="compass" class="w-5 h-5 text-dourado shrink-0 mt-0.5"></i>
+                    <div>
+                      <strong class="block text-sm text-grafite">Quero conhecer o Movimento Pólen.</strong>
+                      <span class="text-xs text-grafite-suave">Saber mais sobre as missas, comunidades e caminhada.</span>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    data-intent="Quero participar de um retiro."
+                    class="intent-btn text-left p-4 rounded-2xl border-2 border-amber-900/10 bg-creme hover:border-dourado/50 transition-all flex items-start gap-3"
+                  >
+                    <i data-lucide="sunrise" class="w-5 h-5 text-terracota shrink-0 mt-0.5"></i>
+                    <div>
+                      <strong class="block text-sm text-grafite">Quero participar de um retiro.</strong>
+                      <span class="text-xs text-grafite-suave">Inscrever-se ou receber informações do Retiro Básico e etapas.</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contact-name" class="block text-xs font-bold uppercase tracking-wider text-grafite mb-2">
+                    Nome Completo *
+                  </label>
+                  <input
+                    id="contact-name"
+                    name="nome"
+                    type="text"
+                    required
+                    placeholder="Seu nome completo"
+                    class="w-full px-4 py-3 rounded-xl bg-creme border border-amber-900/15 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-dourado"
+                  />
+                </div>
+
+                <div>
+                  <label for="contact-email" class="block text-xs font-bold uppercase tracking-wider text-grafite mb-2">
+                    E-mail *
+                  </label>
+                  <input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="seuemail@exemplo.com.br"
+                    class="w-full px-4 py-3 rounded-xl bg-creme border border-amber-900/15 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-dourado"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contact-phone" class="block text-xs font-bold uppercase tracking-wider text-grafite mb-2">
+                    Telefone / WhatsApp
+                  </label>
+                  <input
+                    id="contact-phone"
+                    name="telefone"
+                    type="tel"
+                    placeholder="(48) 99999-9999"
+                    class="w-full px-4 py-3 rounded-xl bg-creme border border-amber-900/15 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-dourado"
+                  />
+                </div>
+
+                <div>
+                  <label for="contact-subject" class="block text-xs font-bold uppercase tracking-wider text-grafite mb-2">
+                    Opção Selecionada *
+                  </label>
+                  <select
+                    id="contact-subject"
+                    name="assunto"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-creme border border-amber-900/15 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-dourado"
+                  >
+                    <option value="Quero conhecer o Movimento Pólen.">Quero conhecer o Movimento Pólen.</option>
+                    <option value="Quero participar de um retiro.">Quero participar de um retiro.</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block text-xs font-bold uppercase tracking-wider text-grafite mb-2">
+                  Mensagem *
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="mensagem"
+                  rows="4"
+                  required
+                  placeholder="Conte-nos um pouco sobre você, sua idade ou sua dúvida..."
+                  class="w-full px-4 py-3 rounded-xl bg-creme border border-amber-900/15 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-dourado"
+                ></textarea>
+              </div>
+
+              <!-- Feedback Visual de Envio -->
+              <div id="contact-feedback" class="hidden rounded-2xl p-4 text-sm font-medium" role="status" aria-live="polite"></div>
+
+              <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <span class="text-xs text-grafite-suave">
+                  * Campos obrigatórios. A Equipe de Acolhida entrará em contato com você.
+                </span>
+                <button
+                  id="contact-submit-btn"
+                  type="submit"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-dourado text-white font-semibold hover:bg-dourado-hover transition-all shadow-md hover:shadow-lg shrink-0 disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Enviar Mensagem</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-grafite text-slate-300 py-14 border-t border-amber-900/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-slate-700/70">
+        <!-- Coluna 1: Nova Frase Institucional -->
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-dourado flex items-center justify-center text-white font-serif font-bold">
+              P
+            </div>
+            <span class="font-serif font-bold text-xl text-white">Movimento Pólen</span>
+          </div>
+          <p class="font-serif italic text-amber-300 text-base">
+            Um estilo de vida.
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed max-w-md">
+            Assim como uma flor espalha suas sementes pelo mundo, o Movimento Pólen busca formar e espalhar lideranças cristãs, que vivam e testemunhem o Evangelho no seu dia a dia.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Links de Navegação -->
+        <div class="md:col-span-3 space-y-2 text-sm">
+          <h3 class="font-serif font-bold text-white text-base mb-3">Navegação</h3>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#inicio" class="hover:text-dourado transition-colors">Início</a></li>
+            <li><a href="#historia" class="hover:text-dourado transition-colors">Nossa História</a></li>
+            <li><a href="#quem-somos" class="hover:text-dourado transition-colors">O que é o Movimento Pólen &amp; A Mística</a></li>
+            <li><a href="#caminhada" class="hover:text-dourado transition-colors">Nossa Caminhada</a></li>
+            <li><a href="#equipes" class="hover:text-dourado transition-colors">Comunidades e Equipes</a></li>
+            <li><a href="#acervo" class="hover:text-dourado transition-colors">Jornal Síntese Pólen</a></li>
+            <li><a href="#formulario-participacao" class="hover:text-dourado transition-colors">Quero Participar</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: As Três Opções de Missas -->
+        <div class="md:col-span-4 space-y-3 text-sm">
+          <h3 class="font-serif font-bold text-white text-base mb-3">Nossas Missas</h3>
+          <ul class="space-y-2.5 text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="calendar" class="w-4 h-4 text-dourado shrink-0 mt-1"></i>
+              <span><strong class="text-amber-300">Missa mensal</strong> — primeiro sábado, às 8h15 (Catedral Metropolitana).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-dourado shrink-0 mt-1"></i>
+              <span><strong class="text-amber-300">Missa Jovem</strong> — terceiro sábado, às 18h15 (Catedral Metropolitana).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="church" class="w-4 h-4 text-dourado shrink-0 mt-1"></i>
+              <span><strong class="text-amber-300">Missa na Igreja de Santo Antônio</strong> — primeiro domingo, às 10h.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 1971–2026 Movimento Pólen • Catedral Metropolitana de Florianópolis.</p>
+        <p>Fundado pelo Padre Pedro Adolino Martendal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE LEITURA DE PDF (#pdf-modal) -->
+  <div
+    id="pdf-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="pdf-modal-title"
+  >
+    <!-- Backdrop -->
+    <div id="pdf-modal-backdrop" class="fixed inset-0 bg-slate-950/75 backdrop-blur-xs transition-opacity"></div>
+
+    <!-- Conteúdo do Modal -->
+    <div class="relative z-10 w-full max-w-5xl h-[88vh] bg-creme rounded-3xl shadow-2xl border border-amber-900/20 flex flex-col overflow-hidden">
+      <!-- Cabeçalho do Modal -->
+      <div class="flex items-center justify-between gap-4 px-5 sm:px-7 py-4 bg-white border-b border-amber-900/10">
+        <div class="min-w-0">
+          <span id="pdf-modal-meta" class="block text-xs font-bold uppercase tracking-wider text-terracota">
+            Pasta • Ano
+          </span>
+          <h3 id="pdf-modal-title" class="font-serif font-bold text-lg sm:text-xl text-grafite truncate">
+            Edição Síntese Pólen
+          </h3>
+        </div>
+
+        <div class="flex items-center gap-2.5 shrink-0">
+          <a
+            id="pdf-modal-download"
+            href="#"
+            download
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-dourado text-white text-xs sm:text-sm font-semibold hover:bg-dourado-hover transition-colors shadow-xs"
+          >
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Baixar PDF</span>
+          </a>
+
+          <button
+            id="pdf-modal-close"
+            type="button"
+            aria-label="Fechar visualizador de documento"
+            class="p-2 rounded-xl bg-creme hover:bg-creme-escuro text-grafite transition-colors"
+          >
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Corpo com Iframe -->
+      <div class="relative flex-1 bg-slate-100">
+        <iframe
+          id="pdf-modal-iframe"
+          src="about:blank"
+          title="Visualizador de edições do jornal Síntese Pólen"
+          class="w-full h-full border-0"
+        ></iframe>
+      </div>
+
+      <!-- Rodapé Informativo do Modal -->
+      <div class="px-6 py-3 bg-white border-t border-amber-900/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-grafite-suave">
+        <span>Caso o PDF não carregue no navegador, utilize o botão <strong>Baixar PDF</strong> acima.</span>
+        <span class="text-terracota font-medium">Jornal Síntese Pólen • Acervo Histórico</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Principal ES6 Modular -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

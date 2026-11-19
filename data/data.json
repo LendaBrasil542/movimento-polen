@@ -1,0 +1,174 @@
+{
+  "estatisticas": [
+    {
+      "id": "stat-fundacao",
+      "icone": "calendar-heart",
+      "valor": "Desde 1971",
+      "titulo": "Mais de 50 anos de história",
+      "descricao": "Fundado na Catedral Metropolitana de Florianópolis pelo Padre Pedro Adolino Martendal junto a seus alunos."
+    },
+    {
+      "id": "stat-retiros",
+      "icone": "compass",
+      "valor": "5 Etapas",
+      "titulo": "Caminhada de retiros",
+      "descricao": "Retiro Básico, Aprofundamento, Opção, Renovação e Casais acompanhando cada fase da vida."
+    },
+    {
+      "id": "stat-missas",
+      "icone": "church",
+      "valor": "3 Celebrações",
+      "titulo": "Missas abertas a todos",
+      "descricao": "Missa mensal (1º sáb, 8h15), Missa Jovem (3º sáb, 18h15) e Missa em Santo Antônio (1º dom, 10h)."
+    },
+    {
+      "id": "stat-mistica",
+      "icone": "book-heart",
+      "valor": "7 Pontos",
+      "titulo": "A Mística no cotidiano",
+      "descricao": "Princípios para viver o Evangelho na família, na faculdade, no trabalho e na comunidade."
+    }
+  ],
+  "galeria_historia": [
+    {
+      "epoca": "Raízes • 1971",
+      "titulo": "Do Retiro Pascal ao Movimento Pólen",
+      "descricao": "O desejo dos alunos do Pe. Pedro Adolino Martendal de aprofundar a fé na Catedral Metropolitana de Florianópolis.",
+      "imagem": "assets/img/galeria/1971-retiro-pascal.jpg"
+    },
+    {
+      "epoca": "Vida Comunitária",
+      "titulo": "Jovens e Casais Espirituais",
+      "descricao": "Encontros mensais de partilha de vida, oração e meditação da Palavra de Vida escolhida pelo fundador.",
+      "imagem": "assets/img/galeria/juventude-comunidade.jpg"
+    },
+    {
+      "epoca": "Celebração e Unidade",
+      "titulo": "A Família Pólen reunida ao redor do Altar",
+      "descricao": "Polens e não Polens celebrando juntos a Eucaristia na Catedral Metropolitana e na Igreja de Santo Antônio.",
+      "imagem": "assets/img/galeria/celebracao-catedral.jpg"
+    },
+    {
+      "epoca": "Lideranças Cristãs Hoje",
+      "titulo": "Mais de 50 anos espalhando sementes",
+      "descricao": "Novas gerações vivendo a Mística e servindo à Igreja através das equipes e retiros.",
+      "imagem": "assets/img/galeria/encontros-atuais.jpg"
+    }
+  ],
+  "acervo": [
+    {
+      "id": "sintese-antiga-01",
+      "titulo": "Síntese Pólen — Edição Histórica: Raízes e Testemunhos",
+      "ano": "Acervo Histórico",
+      "categoria": "Sínteses antigas",
+      "resumo": "Registros históricos, partilhas das primeiras comunidades, mensagens do Pe. Pedro Adolino Martendal e crônicas dos retiros.",
+      "caminho_pdf": "assets/docs/sinteses-antigas/sintese-historica-01.pdf"
+    },
+    {
+      "id": "sintese-antiga-02",
+      "titulo": "Síntese Pólen — Especial Memórias da Caminhada",
+      "ano": "Acervo Histórico",
+      "categoria": "Sínteses antigas",
+      "resumo": "Coletânea de reflexões sobre a Palavra de Vida, os sete pontos da Mística e testemunhos das equipes de serviço.",
+      "caminho_pdf": "assets/docs/sinteses-antigas/sintese-historica-02.pdf"
+    },
+    {
+      "id": "sintese-2026-07",
+      "titulo": "Síntese Pólen — Julho 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Edição mensal de julho de 2026 do jornal do Movimento Pólen, produzida pela Equipe de Comunicação.",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Julho 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-08",
+      "titulo": "Síntese Pólen — Agosto 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Edição comemorativa de agosto de 2026 celebrando o mês de fundação do Movimento Pólen.",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Agosto 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-09",
+      "titulo": "Síntese Pólen — Setembro 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Edição de setembro de 2026 com partilhas das comunidades, espiritualidade e agenda das missas.",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Setembro 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-10",
+      "titulo": "Síntese Pólen — Outubro 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Edição de outubro de 2026 reunindo testemunhos dos retiros, formações e vida comunitária.",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Outubro 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-11",
+      "titulo": "Síntese Pólen — Novembro 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Edição de novembro de 2026 do jornal Síntese Pólen com notícias das equipes e preparação para o encerramento do ano.",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Novembro 2026.pdf"
+    },
+    {
+      "id": "sintese-2027-01",
+      "titulo": "Síntese Pólen — 1ª Edição de 2027",
+      "ano": 2027,
+      "categoria": "Sínteses 2027",
+      "resumo": "Edição do jornal Síntese Pólen dedicada ao calendário pastoral de 2027, formação cristã e acolhida aos novos retirantes.",
+      "caminho_pdf": "assets/docs/sinteses-2027/sintese-polen-2027-edicao-01.pdf"
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "1. O que é o Movimento Pólen?",
+      "resposta": "O Movimento Pólen é um movimento católico de evangelização, nascido em 1971, na Catedral Metropolitana de Florianópolis. Mais do que promover retiros isolados, o Pólen propõe um estilo de vida e uma caminhada contínua de fé para formar e espalhar lideranças cristãs que vivam e testemunhem o Evangelho no seu dia a dia."
+    },
+    {
+      "pergunta": "2. Como surgiu o Movimento Pólen em 1971?",
+      "resposta": "O Movimento Pólen foi fundado em 1971, na Catedral Metropolitana de Florianópolis, pelo Padre Pedro Adolino Martendal, junto a seus alunos, que desejavam realizar um retiro para aprofundar sua fé. Dessa iniciativa nasceu o Retiro Pascal e, posteriormente, todo o Movimento Pólen."
+    },
+    {
+      "pergunta": "3. Como funciona o Retiro Básico?",
+      "resposta": "O Retiro Básico é a porta de entrada do Movimento Pólen. Ele apresenta os princípios fundamentais da fé cristã, abordando temas como Jesus Cristo, Nossa Senhora e o convite a viver como cristãos. Após o retiro, os participantes permanecem em comunidade por aproximadamente um ano antes de seguir para a próxima etapa."
+    },
+    {
+      "pergunta": "4. O que são as Comunidades e quem as acompanha?",
+      "resposta": "As comunidades são pequenos grupos de convivência que se encontram mensalmente para partilha de vida, oração, formação cristã e meditação da Palavra de Vida (um trecho bíblico escolhido pelo fundador). Nas etapas de jovens, cada comunidade é acompanhada por um casal espiritual."
+    },
+    {
+      "pergunta": "5. O que é o livro 'Mística'?",
+      "resposta": "A espiritualidade do Movimento Pólen é fundamentada no livro Mística, escrito pelo nosso fundador, Padre Pedro Adolino Martendal. A obra apresenta sete pontos que buscamos viver no cotidiano — na família, na faculdade, no trabalho e na comunidade — para nos aproximarmos cada vez mais de Cristo."
+    },
+    {
+      "pergunta": "6. Quais são as cinco etapas da caminhada do Movimento Pólen?",
+      "resposta": "As cinco etapas são: 1) Retiro Básico (porta de entrada e fundamentos da fé cristã); 2) Aprofundamento (conhecimento e prática da Mística); 3) Opção (aprofundamento sobre Jesus Cristo, a Bíblia, a Igreja Católica e compromisso com a Opção Pólen); 4) Renovação (retiro anual com temática diferente para renovar a fé); e 5) Casais (dedicado a quem vive o sacramento do matrimônio)."
+    },
+    {
+      "pergunta": "7. Quais são as equipes permanentes do Movimento Pólen?",
+      "resposta": "O Movimento Pólen funciona por meio de cinco equipes permanentes: Acolhida (convida para o Retiro Básico e acolhe quem chega), Canto (animação musical dos retiros, ensaios e missas), Comunicação (redes sociais, avisos e produção do jornal Síntese Pólen), Formação (palestras e momentos formativos) e Liturgia (preparação de missas, adorações e terços)."
+    },
+    {
+      "pergunta": "8. Como funcionam as equipes de serviço nos retiros?",
+      "resposta": "Nos retiros, o serviço divide-se em duas frentes: Dirigentes (responsáveis pela organização, programação, palestras, secretaria e acompanhamento dos retirantes) e Oração e Serviço (responsável por sustentar o retiro pela intercessão e cuidar das refeições, limpeza e organização dos espaços)."
+    },
+    {
+      "pergunta": "9. Quais são os dias e horários das Missas do Movimento Pólen?",
+      "resposta": "Promovemos três celebrações abertas a todos: 1) Missa mensal: primeiro sábado do mês, às 8h15 (na Catedral Metropolitana); 2) Missa Jovem: terceiro sábado do mês, às 18h15 (na Catedral Metropolitana); e 3) Missa na Igreja de Santo Antônio: primeiro domingo do mês, às 10h."
+    },
+    {
+      "pergunta": "10. Quem pode participar das missas do Movimento Pólen?",
+      "resposta": "Todos são convidados a participar! Polens e não Polens, jovens, casais, comunidades e pessoas que desejam conhecer o Movimento Pólen são sempre bem-vindos em nossas celebrações."
+    },
+    {
+      "pergunta": "11. O que é o jornal Síntese Pólen?",
+      "resposta": "A Síntese Pólen é o jornal oficial do Movimento Pólen, produzido pela Equipe de Comunicação. No nosso Acervo Histórico digital, você pode consultar as edições divididas nas pastas Sínteses antigas, Sínteses 2026 e Sínteses 2027."
+    },
+    {
+      "pergunta": "12. Como faço para conhecer o Movimento Pólen ou participar de um retiro?",
+      "resposta": "Basta utilizar o formulário da seção 'Quero participar!', escolhendo uma das duas opções ('Quero conhecer o Movimento Pólen' ou 'Quero participar de um retiro'). A nossa Equipe de Acolhida entrará em contato com você!"
+    }
+  ]
+}
