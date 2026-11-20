@@ -57,27 +57,139 @@
   ],
   "acervo": [
     {
-      "id": "sintese-antiga-01",
-      "titulo": "Síntese Pólen — Edição Histórica: Raízes e Testemunhos",
-      "ano": "Acervo Histórico",
-      "categoria": "Sínteses antigas",
-      "resumo": "Registros históricos, partilhas das primeiras comunidades, mensagens do Pe. Pedro Adolino Martendal e crônicas dos retiros.",
-      "caminho_pdf": "assets/docs/sinteses-antigas/sintese-historica-01.pdf"
+      "id": "sintese-2025-02",
+      "titulo": "Síntese Pólen — Fevereiro 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Fevereiro de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Fevereiro.pdf"
     },
     {
-      "id": "sintese-antiga-02",
-      "titulo": "Síntese Pólen — Especial Memórias da Caminhada",
-      "ano": "Acervo Histórico",
-      "categoria": "Sínteses antigas",
-      "resumo": "Coletânea de reflexões sobre a Palavra de Vida, os sete pontos da Mística e testemunhos das equipes de serviço.",
-      "caminho_pdf": "assets/docs/sinteses-antigas/sintese-historica-02.pdf"
+      "id": "sintese-2025-03",
+      "titulo": "Síntese Pólen — Março 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Março de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Março.pdf"
+    },
+    {
+      "id": "sintese-2025-04",
+      "titulo": "Síntese Pólen — Abril 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Abril de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Abril.pdf"
+    },
+    {
+      "id": "sintese-2025-05",
+      "titulo": "Síntese Pólen — Maio 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Maio de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Maio.pdf"
+    },
+    {
+      "id": "sintese-2025-06",
+      "titulo": "Síntese Pólen — Junho 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Junho de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Junho.pdf"
+    },
+    {
+      "id": "sintese-2025-07",
+      "titulo": "Síntese Pólen — Julho 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Julho de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Julho.pdf"
+    },
+    {
+      "id": "sintese-2025-08",
+      "titulo": "Síntese Pólen — Agosto 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Agosto de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Agosto.pdf"
+    },
+    {
+      "id": "sintese-2025-09",
+      "titulo": "Síntese Pólen — Setembro 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Setembro de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Setembro.pdf"
+    },
+    {
+      "id": "sintese-2025-10",
+      "titulo": "Síntese Pólen — Outubro 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Outubro de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Outubro.pdf"
+    },
+    {
+      "id": "sintese-2025-11",
+      "titulo": "Síntese Pólen — Novembro 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Novembro de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Novembro.pdf"
+    },
+    {
+      "id": "sintese-2025-12",
+      "titulo": "Síntese Pólen — Dezembro 2025",
+      "ano": 2025,
+      "categoria": "Sínteses 2025",
+      "resumo": "Síntese Dezembro de 2025",
+      "caminho_pdf": "assets/docs/sinteses-2025/Síntese Dezembro.pdf"
+    },
+    {
+      "id": "sintese-2026-02",
+      "titulo": "Síntese Pólen — Fevereiro 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Síntese Fevereiro de 2026",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Fevereiro 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-03",
+      "titulo": "Síntese Pólen — Março 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Síntese Março de 2026",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Março 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-04",
+      "titulo": "Síntese Pólen — Abril 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Síntese Abril de 2026",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Abril 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-05",
+      "titulo": "Síntese Pólen — Maio 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Síntese Maio de 2026",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Maio 2026.pdf"
+    },
+    {
+      "id": "sintese-2026-06",
+      "titulo": "Síntese Pólen — Junho 2026",
+      "ano": 2026,
+      "categoria": "Sínteses 2026",
+      "resumo": "Síntese Junho de 2026",
+      "caminho_pdf": "assets/docs/sinteses-2026/Sintese Junho 2026.pdf"
     },
     {
       "id": "sintese-2026-07",
       "titulo": "Síntese Pólen — Julho 2026",
       "ano": 2026,
       "categoria": "Sínteses 2026",
-      "resumo": "Edição mensal de julho de 2026 do jornal do Movimento Pólen, produzida pela Equipe de Comunicação.",
+      "resumo": "Síntese Julho de 2026",
       "caminho_pdf": "assets/docs/sinteses-2026/Sintese Julho 2026.pdf"
     },
     {
@@ -85,7 +197,7 @@
       "titulo": "Síntese Pólen — Agosto 2026",
       "ano": 2026,
       "categoria": "Sínteses 2026",
-      "resumo": "Edição comemorativa de agosto de 2026 celebrando o mês de fundação do Movimento Pólen.",
+      "resumo": "Síntese Agosto de 2026",
       "caminho_pdf": "assets/docs/sinteses-2026/Sintese Agosto 2026.pdf"
     },
     {
@@ -93,7 +205,7 @@
       "titulo": "Síntese Pólen — Setembro 2026",
       "ano": 2026,
       "categoria": "Sínteses 2026",
-      "resumo": "Edição de setembro de 2026 com partilhas das comunidades, espiritualidade e agenda das missas.",
+      "resumo": "Síntese Setembro de 2026",
       "caminho_pdf": "assets/docs/sinteses-2026/Sintese Setembro 2026.pdf"
     },
     {
@@ -101,7 +213,7 @@
       "titulo": "Síntese Pólen — Outubro 2026",
       "ano": 2026,
       "categoria": "Sínteses 2026",
-      "resumo": "Edição de outubro de 2026 reunindo testemunhos dos retiros, formações e vida comunitária.",
+      "resumo": "Síntese Outubro de 2026",
       "caminho_pdf": "assets/docs/sinteses-2026/Sintese Outubro 2026.pdf"
     },
     {
@@ -109,16 +221,8 @@
       "titulo": "Síntese Pólen — Novembro 2026",
       "ano": 2026,
       "categoria": "Sínteses 2026",
-      "resumo": "Edição de novembro de 2026 do jornal Síntese Pólen com notícias das equipes e preparação para o encerramento do ano.",
+      "resumo": "Síntese Novembro de 2026",
       "caminho_pdf": "assets/docs/sinteses-2026/Sintese Novembro 2026.pdf"
-    },
-    {
-      "id": "sintese-2027-01",
-      "titulo": "Síntese Pólen — 1ª Edição de 2027",
-      "ano": 2027,
-      "categoria": "Sínteses 2027",
-      "resumo": "Edição do jornal Síntese Pólen dedicada ao calendário pastoral de 2027, formação cristã e acolhida aos novos retirantes.",
-      "caminho_pdf": "assets/docs/sinteses-2027/sintese-polen-2027-edicao-01.pdf"
     }
   ],
   "faq": [
